@@ -1,5 +1,6 @@
 {
   "name": "nss-rbu-v2",
+  "author": "Annalhq Shaikh",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,8 +11,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.15.8",
     "@astrojs/check": "^0.9.3",
+    "@astrojs/react": "^3.6.2",
+    "@astrojs/tailwind": "^5.1.1",
+    "astro": "^4.15.8",
+    "tailwindcss": "^3.4.12",
     "typescript": "^5.6.2"
   }
 }
