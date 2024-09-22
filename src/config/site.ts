@@ -1,4 +1,4 @@
-import type { SiteConfig } from "@/types/env";
+import type { SiteConfig } from "@/types";
 
 export const siteConfig: SiteConfig = {
   displayName: "NSS RBU",

@@ -1,0 +1,57 @@
+---
+import Footer from "@/components/layout/footer.astro";
+import Header from "@/components/layout/header.astro";
+import { SheetMobileNav } from "@/components/layout/sheet-mobile-nav";
+import { MainNavigationMenu } from "@/components/main-navigation-menu";
+import { buttonVariants } from "@/components/ui/button";
+import { navMenuConfig } from "@/config/nav-menu";
+import { cn } from "@/lib/utils";
+import BaseLayout from "./base-layout.astro";
+// import { marketingConfig } from "@/config/marketing";
+// import MainNav from "@/components/layout/main-nav.astro";
+
+type Props = {
+  title: string;
+  description?: string;
+  mainClass?: string;
+  ogImage?: string;
+};
+
+const { title, description, mainClass, ogImage } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} ogImage={ogImage}>
+  <!-- Put Announcements Here -->
+  <div class="bg-[#F86A4A] px-4 py-3 text-white hidden">
+    <p class="text-center text-sm font-medium">
+      Upcoming events{" "}🚀
+      <a href="#" class="inline-block underline"
+        >Learn more</a
+      >
+    </p>
+  </div>
+  <Header>
+    <!-- Navigation Menu on desktop -->
+    <MainNavigationMenu slot="left-header" client:load />
+    <SheetMobileNav
+      mainNavItems={[...navMenuConfig.links]}
+      sidebarNavItems={[...navMenuConfig.infosNav]}
+      slot="mobile-nav-header"
+      client:load
+    />
+
+    <nav slot="right-header">
+      <a
+        href="/contact"
+        class={cn(buttonVariants({ variant: "outline", size: "sm" }), "px-4")}>
+        Contact Us
+      </a>
+    </nav>
+  </Header>
+
+  <main class={cn(mainClass)}>
+    <slot />
+  </main>
+
+  <Footer />
+</BaseLayout>

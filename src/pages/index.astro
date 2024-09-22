@@ -1,5 +1,44 @@
 ---
-import Layout from '../layouts/Layout.astro';
+
 import Card from '../components/Card.astro';
 import Confetti from '@/components/confetti';
+import MainLayout from "@/layouts/main-layout.astro";
+import { siteConfig } from "@/config/site";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import Icon from "astro-icon";
+
+const pageTitle = "Welcome to NSS RBU";
+const pageDescription = "Join the community and be a part of something great!";
 ---
+
+<MainLayout
+  title="Home | App Development Club at Oregon State University"
+  description="The App Development Club at Oregon State University is a student organization that fosters a community of students passionate about application development.">
+  <section class="space-y-6 pt-10 lg:py-10 min-h-screen">
+    <div
+      class="container flex max-w-[64rem] flex-col items-center gap-12 text-center">
+      <Confetti client:idle>
+        <a
+          href="https://discord.gg/eae2rdQDPA"
+          class={cn(buttonVariants({ variant: "outline", size: "sm" }))}
+          target="_blank">
+          Upcoming Events
+        </a>
+      </Confetti>
+
+      <h1
+        class="font-heading text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl !leading-[1.1] text-balance">
+        NSS
+        <span class="text-gradient_blaze-orange">RBU</span>
+      </h1>
+
+      <p
+        class="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8 text-balance">
+        Community of students passionate about the social service.
+      </p>
+    </div>
+  </section>
+
+</MainLayout> 
+
