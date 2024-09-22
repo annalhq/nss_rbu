@@ -1,9 +1,7 @@
 ---
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
-
-
-
+import { ThemeToggle } from "@/components/theme-toggle";
 type Props = {
   className?: string;
 };
@@ -26,6 +24,10 @@ const { className } = Astro.props;
 
       <slot name="mobile-nav-header" />
 
+      <div class="hidden md:flex gap-4">
+        <slot name="left-header" />
+        <ThemeToggle client:idle />
+      </div>
     </div>
 
     <!-- logo mobile center -->
