@@ -5,7 +5,7 @@
   ![Astro](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=for-the-badge)
   ![React](https://shields.io/badge/react-black?logo=react&style=for-the-badge)
   ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-grey?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC)
-  ![TypeScript](https://img.shields.io/badge/TypeScrip-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+  ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 </p>
 
