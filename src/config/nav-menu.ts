@@ -1,7 +1,8 @@
 import type { NavMenuConfig } from "@/types";
+import { siteConfig } from "@/config/site";
 
 export const navMenuConfig: NavMenuConfig = {
-  infosNav: [], // Remove the "Directory" section
+  infosNav: [], 
 
   links: [
     {
@@ -13,8 +14,8 @@ export const navMenuConfig: NavMenuConfig = {
       href: "/faq",
     },
     {
-      title: "Sponsor",
-      href: "/sponsor",
+      title: "Team",
+      href: "/team",
     },
   ],
 };
