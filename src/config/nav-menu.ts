@@ -6,16 +6,16 @@ export const navMenuConfig: NavMenuConfig = {
 
   links: [
     {
-      title: "About",
-      href: "/about",
-    },
-    {
-      title: "FAQ",
-      href: "/faq",
+      title: "Events",
+      href: "/events",
     },
     {
       title: "Team",
       href: "/team",
+    },
+    {
+      title: "About",
+      href: "/about",
     },
   ],
 };

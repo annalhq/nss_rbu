@@ -7,6 +7,7 @@ import { siteConfig } from "@/config/site";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Icon from "astro-icon";
+import { ArrowUpRight } from "lucide-react"
 
 ---
 
@@ -21,7 +22,7 @@ import Icon from "astro-icon";
           href="link-here"
           class={cn(buttonVariants({ variant: "outline", size: "sm" }))}
           target="_blank">
-          Upcoming Events
+          Upcoming Events <ArrowUpRight />
         </a>
       </Confetti>
 
