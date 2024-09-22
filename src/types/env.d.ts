@@ -6,7 +6,6 @@ export type SiteConfig = {
      links: {
        github: string;
        ideal_logic: string;
-       discord: string;
        old_website: string;
      };
    };

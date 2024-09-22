@@ -9,7 +9,6 @@ export const siteConfig: SiteConfig = {
   links: {
     ideal_logic: "link-here",
     github: "https://github.com/annalhq/nss_rbu",
-    discord: "https://discord.gg/link",
     old_website: "https://nss-rcoem",
   },
 };

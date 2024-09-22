@@ -1,0 +1,27 @@
+---
+import { cn } from "@/lib/utils";
+
+type Props = {
+  className?: string;
+};
+const { className } = Astro.props;
+---
+
+<footer class={cn(className)}>
+  <div
+    class="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0"
+  >
+    <div
+      class="inline-flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0"
+    >
+      <p class="text-center text-xs md:text-right leading-loose balance-text">
+        Coded with <span class="text-red-600">❤️</span> by <a
+          href="github.com/annalhq"
+          class="font-medium underline underline-offset-4"
+        >
+          Annalhq Shaikh
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
