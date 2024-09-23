@@ -16,10 +16,9 @@ export interface TeamCardItem {
   role: string;
   image: string;
   other?: string;
-  github?: string;
+  instagram?: string;
   linkedin?: string;
   email?: string;
-  biography?: string;
 }
 
 export type ProjectCardItem = {

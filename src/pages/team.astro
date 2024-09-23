@@ -1,0 +1,17 @@
+---
+import { LeadershipTeamGrid } from "@/components/grids";
+import { Separator } from "@/components/ui/separator";
+import MainLayout from "@/layouts/main-layout.astro";
+---
+
+<MainLayout
+  title="NSS RBU | Team"
+  description=""
+  mainClass="container py-10">
+  <section class="space-y-8 max-w-4xl mx-auto" id="#team">
+    <h1 class="font-heading text-4xl">NSS RBU Team</h1>
+    <Separator className="opacity-95" />
+    <h2 class="font-subheading text-3xl font-normal">Lead Team</h2>
+    <LeadershipTeamGrid client:load />
+
+</MainLayout>
