@@ -9,24 +9,59 @@
 
 </p>
 
-> 🧑‍🚀  
+> 🧑‍🚀  Not me, but you!
 
 ## 🚀 Project Structure
 
 ```text
 /
+├── .astro/
+│   ├── settings.json
+│   └── types.d.ts
+├── .gitignore
+├── .vscode/
+│   ├── extensions.json
+│   └── launch.json
+├── astro.config.mjs
+├── components.json
+├── package.json
 ├── public/
-│   └── favicon.svg
+│   └── fonts/
+│       ├── calsans-semibold.woff2
+│       └── inter.woff2
+├── README.md
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── Card.astro
+│   │   ├── confetti.tsx
+│   │   ├── layout/
+│   │   │   ├── footer.astro
+│   │   │   ├── header.astro
+│   │   │   ├── sheet-mobile-nav.tsx
+│   │   │   └── main-nav.astro
+│   │   ├── main-navigation-menu.tsx
+│   │   ├── tailwind-indicator.astro
+│   │   └── theme-toggle.tsx
+│   ├── config/
+│   │   ├── nav-menu.ts
+│   │   └── site.ts
+│   ├── env.d.ts
+│   ├── hooks/
+│   │   └── use-mounted.ts
+│   ├── icons/
+│   │   └── index.tsx
 │   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   │   ├── base-layout.astro
+│   │   └── main-layout.astro
+│   ├── lib/
+│   ├── pages/
+│   │   └── index.astro
+│   ├── styles/
+│   │   └── globals.css
+│   └── types/
+├── tailwind.config.js
+└── tsconfig.json
 ```
-
 
 ## 🧞 Commands
 
